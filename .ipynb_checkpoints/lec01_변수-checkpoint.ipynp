@@ -1,0 +1,445 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "b74da651-07f8-4f13-9ed5-a0b24134b154",
+   "metadata": {},
+   "source": [
+    "# Lec01. 변수"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "87b05c90-8389-4a41-8eae-b076a9e2e286",
+   "metadata": {},
+   "source": [
+    "변수란 : 값을 저장하는 공간(메모리 4바이트"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "6099e7c2-dde3-4992-96ac-5bc30c13d2ff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=10\n",
+    "b=20\n",
+    "print(a+b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "019cb60d-d66f-407f-b2a2-fcc0fc0862eb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "*숫자"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "91e3a982-60b6-485c-a89b-97a17ae52ec2",
+   "metadata": {},
+   "source": [
+    "## 타입\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8220a1c7-fd23-4763-b7f3-eeaa2be4961b",
+   "metadata": {},
+   "source": [
+    "# **lec01**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1f44d14c-f116-4473-bf8b-a29b28cadfff",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'안녕안녕\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "becd5faf-57fe-4864-becc-f696ae4ca214",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## 컬렉션\n",
+    "*<font color=red><>리스트 :[]\n",
+    "*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "62bc6dd4-31df-4c41-8389-b81b55f9b6c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, '가', '나')\n"
+     ]
+    }
+   ],
+   "source": [
+    "mytuple=(1,2,3,\"가\",\"나\")\n",
+    "print(mytuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "afd87e5c-2958-4280-b1ef-15d6d402cff0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'등수': 1, '성별': 2, '등급': '가'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "mydict={\"등수\":1 , \"성별\":2 , \"등급\":\"가\"}\n",
+    "print(mydict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "22c4b2c9-dc94-4c58-bfa4-1e5d62da260c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'등수': 10, '성별': 2, '등급': '가'}"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydict[\"등수\"]=10\n",
+    "mydict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "49c33568-17dd-4132-a628-252ed70b37ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, '가', '나']\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist=[1,2,3,\"가\",\"나\"]\n",
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "8764ef27-97c2-46a3-8b7e-1826efb77100",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, '가', '나', '카']\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist.append(\"카\")\n",
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "8b8dbc3e-23ed-46bd-9f5d-9c6879cd5c37",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist[0]=111"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3f46ce4d-f3e4-48dd-b8ca-3dd1d5037706",
+   "metadata": {},
+   "source": [
+    "# **READ**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "dadc578f-c7f6-4032-8275-9016435291bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, '가', '나')\n"
+     ]
+    }
+   ],
+   "source": [
+    "mytuple=(1,2,3,\"가\",\"나\")\n",
+    "print(mytuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "1d811553-ccd0-4492-bbc1-dfc6126d1f7c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "dict_keys(['등수', '성별', '등급'])\n",
+      "dict_values([1, 2, '가'])\n",
+      "dict_items([('등수', 1), ('성별', 2), ('등급', '가')])\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(mydict.keys() )\n",
+    "print(mydict.values() )\n",
+    "print(mydict.items() )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "e3c55833-6eac-402d-af6a-0c1d61e5619d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 카 나\n",
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(mylist[0], mylist[5], mylist[-2])\n",
+    "print(mylist[0:3])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fdd8fe82-36a5-45f9-b4e3-a01420799d04",
+   "metadata": {},
+   "source": [
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "1128ccd6-06bd-4a8d-ac1a-b12e10921f7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[111, 2, 3, '가', '나', '카']"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "098b03c0-e57b-4660-90c2-121920ae168f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, '가', '나', '카']"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist.remove(111)\n",
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "6d8225ad-f696-4b21-b4b6-2131010a49a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, '가', '나']"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "del mylist[-1]\n",
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "fec43238-0fa7-48ec-a121-c6eed613291b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, '가']"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist.pop()\n",
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "f5a03647-7eb3-4b42-9240-5526a1095df2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'등수': 10, '성별': 2, '등급': '가'}"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "6525a6fa-2e77-4d2a-b5d6-2c4a0098c78b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'성별': 2, '등급': '가'}"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "del mydict[\"등수\"]\n",
+    "mydict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b86f72a9-e60e-484b-a859-1638868259a1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "hw\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "066f7d1f-0141-4ea6-b71d-c31915a3e34d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

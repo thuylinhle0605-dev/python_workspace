@@ -1,0 +1,18 @@
+# 1. 기존 .git 폴더 삭제 (로컬 Git 이력 완전 초기화)
+# 1.1 해당 디렉토리 경로에 숨김항목 표시후에 .git 파일 삭제
+rm -rf .git
+# (Windows CMD일 경우: rmdir /s /q .git)
+# (Windows PowerShell일 경우: Remove-Item -Recurse -Force .git)
+
+# 2. Git 새로 초기화 및 브랜치명을 main으로 설정
+git init -b main
+
+# 3. 현재 로컬 파일 전체를 첫 커밋으로 올림
+git add .
+git commit -m "Initial commit"
+
+# 4. 원격 저장소 새로 연결
+git remote add origin <원격_저장소_URL>
+
+# 5. 원격 저장소에 강제로 덮어씌우기
+git push -u origin main --force

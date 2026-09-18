@@ -1,0 +1,33 @@
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+url = "https://www.bucheon.go.kr/site/program/board/photoboard/list?boardtypeid=26778&menuid=148006001012001"
+driver = webdriver.Chrome()
+driver.get(url)
+time.sleep(2)
+
+
+for page in range(1, 4):
+    print(f"{page}---------------------------------------------")
+    # 페이지 이동
+    if page > 1:
+        page_url = f"{url}&currentpage={page}"
+        driver.get(page_url)
+        time.sleep(2)
+    html_doc = driver.page_source 
+
+    #----------- 이하 코드 requests 복붙 -----------
+    soup = BeautifulSoup(html_doc, "html.parser")
+    food_list = soup.select("#boardForm > div > ul > li > div")
+    for food in food_list:
+        title = food.select_one("div > a > img").get("alt")
+        #title = food.select("a")[1].text
+        img = "https://www.bucheon.go.kr" + food.select_one("div > a > img").get("src")
+        addr = food.select_one("p:nth-child(3)").text
+        tel = food.select_one("p:nth-child(4)").text
+        print(title, img, addr, tel)
+        
+    
+driver.quit()
